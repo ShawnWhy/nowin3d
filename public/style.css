@@ -1,0 +1,14 @@
+#canvas{
+  height:100%;
+  width:100%;
+}
+.controller{
+  height:20%;
+  width:30%;
+  background-color:azure;
+  border-radius:4px;
+  position:absolute;
+  left:10px;
+  bottom:10px;f 
+
+}

@@ -1,0 +1,220 @@
+Exporter version: 2.93.2, Blender version: 2.93.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Users\Shawn\Desktop\spacescene\
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of mesh:  earth
+		processing begun of material:  Material.001
+			processing texture earth
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		num positions      :  8510
+		num normals        :  8510
+		num tangents       :  0
+		num uvs            :  17020
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  15872
+	processing begun of mesh:  sky
+		processing begun of material:  Material.002
+			processing texture sky
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  40625
+		num normals        :  40625
+		num tangents       :  162500
+		num uvs            :  81250
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  15872
+	processing begun of mesh:  head4
+		processing begun of material:  eyestexture
+		processing begun of material:  skintexture5
+		processing begun of material:  eyewhitetexture
+		processing begun of multimaterial:  earth.Multimaterial#0
+		num positions      :  10550
+		num normals        :  10550
+		num tangents       :  0
+		num uvs            :  21100
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  19672
+	processing begun of mesh:  head2
+		processing begun of material:  eyestexture
+		processing begun of material:  skintexture
+		processing begun of material:  eyewhitetexture
+		processing begun of material:  skintexture2
+		registered as also a user of material:  eyestexture
+		registered as also a user of material:  eyewhitetexture
+		processing begun of multimaterial:  earth.Multimaterial#1
+		num positions      :  10550
+		num normals        :  10550
+		num tangents       :  0
+		num uvs            :  21100
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  19672
+	processing begun of mesh:  head3
+		processing begun of material:  eyestexture
+		processing begun of material:  eyewhitetexture
+		processing begun of material:  Material
+		registered as also a user of material:  eyestexture
+		registered as also a user of material:  eyewhitetexture
+		processing begun of multimaterial:  earth.Multimaterial#2
+		num positions      :  10549
+		num normals        :  10549
+		num tangents       :  0
+		num uvs            :  21098
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  19672
+	processing begun of mesh:  head1
+		processing begun of material:  eyestexture
+		processing begun of material:  skintexture
+		processing begun of material:  eyewhitetexture
+		registered as also a user of material:  eyestexture
+		registered as also a user of material:  skintexture
+		registered as also a user of material:  eyewhitetexture
+		processing begun of multimaterial:  earth.Multimaterial#3
+		num positions      :  10549
+		num normals        :  10549
+		num tangents       :  0
+		num uvs            :  21098
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  19672
+	processing begun of mesh:  screen3
+		WARNING: No materials have been assigned: 
+		num positions      :  32
+		num normals        :  32
+		num tangents       :  0
+		num uvs            :  64
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  60
+	processing begun of mesh:  screen2
+		WARNING: No materials have been assigned: 
+		num positions      :  64
+		num normals        :  64
+		num tangents       :  0
+		num uvs            :  128
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  100
+	processing begun of mesh:  screen1
+		WARNING: No materials have been assigned: 
+		num positions      :  32
+		num normals        :  32
+		num tangents       :  0
+		num uvs            :  64
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  60
+	processing begun of mesh:  head4.001
+		processing begun of material:  eyestexture
+		processing begun of material:  skintexture4
+		processing begun of material:  eyewhitetexture
+		registered as also a user of material:  eyestexture
+		registered as also a user of material:  eyewhitetexture
+		processing begun of multimaterial:  earth.Multimaterial#4
+		num positions      :  10550
+		num normals        :  10550
+		num tangents       :  0
+		num uvs            :  21100
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  19672
+	processing begun of mesh:  blueplanet
+		processing begun of material:  Material.003
+		num positions      :  588
+		num normals        :  588
+		num tangents       :  0
+		num uvs            :  1176
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  960
+	processing begun of mesh:  saturn
+		processing begun of material:  ringtexture
+			WARNING: unsupported node type(ShaderNodeTexWave) will trigger baking
+		processing begun of material:  saturn texture
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture saturn_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+			Diffuse / albeto channel baked
+			Baking texture, type: EMIT, mapped using: BakingUV
+			processing texture saturn_baked_EMIT
+				texture type:  emissiveTexture, mapped using: "BakingUV"
+			emissive channel baked
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture saturn_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+			specular channel baked
+			bake time:  0 min, 13.493 secs
+		num positions      :  877
+		num normals        :  877
+		num tangents       :  0
+		num uvs            :  1754
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  960
+	processing begun of mesh:  yellowplanet
+		processing begun of material:  Material.004
+		num positions      :  588
+		num normals        :  588
+		num tangents       :  0
+		num uvs            :  1176
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  960
+	processing begun of mesh:  ring
+		processing begun of material:  ringtexture.001
+		num positions      :  567
+		num normals        :  567
+		num tangents       :  0
+		num uvs            :  1134
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  256
+	processing begun of mesh:  Cylinder
+		processing begun of material:  Material.005
+		processing begun of material:  Material.006
+		processing begun of multimaterial:  earth.Multimaterial#5
+		num positions      :  1277
+		num normals        :  1277
+		num tangents       :  0
+		num uvs            :  2554
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  652
+	processing begun of light (POINT):  Sun
+	processing begun of light (POINT):  Sun.001
+========= Writing of JSON file started =========
+	writing mesh:  earth
+	writing mesh:  sky
+	writing mesh:  head4
+	writing mesh:  head2
+	writing mesh:  head3
+	writing mesh:  head1
+	writing mesh:  screen3
+	writing mesh:  screen2
+	writing mesh:  screen1
+	writing mesh:  head4.001
+	writing mesh:  blueplanet
+	writing mesh:  saturn
+	writing mesh:  yellowplanet
+	writing mesh:  ring
+	writing mesh:  Cylinder
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 20.8278 secs
