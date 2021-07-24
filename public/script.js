@@ -162,7 +162,7 @@ window.addEventListener("DOMContentLoaded",function(){
         camera.attachControl(canvas,true);
 
         var screenmaterial = new BABYLON.StandardMaterial("screenMaterial",scene)
-        var videoTexture1 = new BABYLON.VideoTexture("video", "video2.mp4", scene, true);
+        var videoTexture1 = new BABYLON.VideoTexture("video", "video.mp4", scene, true);
         screenmaterial.diffuseTexture= videoTexture1
 
         scene.onPointerDown = function () {
@@ -239,9 +239,15 @@ window.addEventListener("DOMContentLoaded",function(){
             var panel1=scene.getMeshByName("screen1")
             var panel2=scene.getMeshByName("screen2")
             var panel3=scene.getMeshByName("screen3")
-            console.log(panel1.material);
-            var sky=scene.getMeshByName("sky");
-            console.log(sky);
+            var earth = scene.getMeshByName("earth")
+            // var earthMaterial= earth.material;
+            // console.log(earthMaterial);
+            // earthMaterial.emissiveColor = new BABYLON.Color3(0,.1,.1);
+            // earth.Material=earthMaterial;
+
+            // console.log(panel1.material);
+            // var sky=scene.getMeshByName("sky");
+            // console.log(sky);
             
             // panel1.material=screenmaterial;
             // panel3.material=screenmaterial; 
@@ -268,7 +274,7 @@ window.addEventListener("DOMContentLoaded",function(){
                 new BABYLON.ExecuteCodeAction( { trigger: BABYLON.ActionManager.OnPickTrigger, parameter:" "}, 
                 function(){
 
-            panel2.material=material;
+            panel2.material=screenmaterial;
     
                 })
             );
@@ -278,7 +284,7 @@ window.addEventListener("DOMContentLoaded",function(){
                 new BABYLON.ExecuteCodeAction( { trigger: BABYLON.ActionManager.OnPickTrigger, parameter:" "}, 
                 function(){
 
-            panel3.material=material;
+            panel3.material=screenmaterial;
     
                 })
             );
@@ -299,13 +305,21 @@ window.addEventListener("DOMContentLoaded",function(){
 
                 
             })
-            var light = new BABYLON.PointLight("pointLight",new BABYLON.Vector3(0,10,0),scene);
-            var light2 = new BABYLON.SpotLight("spotLight",new BABYLON.Vector3(2,50,0), new BABYLON.Vector3(0,-1,0),BABYLON.Tools.ToRadians(45),0.1,scene);
-            light.parent = sphere;
-            light.intensity=1000;
-            light.range=1000;
-            light.diffuse= new BABYLON.Color3(.3,.5,.6);
-            light2.diffuse = new BABYLON.Color3(1,1,.2);
+            var light = new BABYLON.PointLight("pointLight",new BABYLON.Vector3(0,50,0),scene);
+            var light2 = new BABYLON.PointLight("pointLight",new BABYLON.Vector3(0,0,0),scene);
+            var light3 = new BABYLON.SpotLight("spotLight2",new BABYLON.Vector3(0,50,10), new BABYLON.Vector3(0,20,0),BABYLON.Tools.ToRadians(45),0.1,scene);
+
+            // light.parent = camera;
+            light.intensity=500;
+            light.range=100;
+            light2.intensity=100
+            light2.range=10;
+
+            light3.intensity=1000
+            light.diffuse= new BABYLON.Color3(.5,.5,0);
+            light2.diffuse = new BABYLON.Color3(0,.5,.2);
+            light3.diffuse = new BABYLON.Color3(.5,.5,.2);
+
 
             scene.actionManager = new BABYLON.ActionManager(scene);
             scene.actionManager.registerAction(
@@ -322,7 +336,7 @@ window.addEventListener("DOMContentLoaded",function(){
 
     var scene= createScene();
     engine.runRenderLoop(function(){
-        var light = scene.getLightByName("pointLight");
+        // var light = scene.getLightByName("pointLight");
         // light.diffuse.b +=0.01;
         // light.diffuse.r +=0.01;
         
