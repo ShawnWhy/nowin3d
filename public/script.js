@@ -315,6 +315,8 @@ window.addEventListener("DOMContentLoaded",function(){
             light2.intensity=100
             light2.range=10;
 
+            $(".controller").css("display","none");
+
             light3.intensity=1000
             light.diffuse= new BABYLON.Color3(.5,.5,0);
             light2.diffuse = new BABYLON.Color3(0,.5,.2);
